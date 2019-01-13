@@ -2,7 +2,10 @@ package chap04;
 
 public class StringBuffer_StringBuilder_class {
 	public static void main(String[] args) {
-		StringBuffer sBuffer = new StringBuffer("菜鸟教程官网：");
+		StringBuffer sBuffer = new StringBuffer("菜鸟教程官网");
+		
+		System.out.println("sBuffer的容量：" + sBuffer.capacity()); // 字符串长度6+默认初始容量16
+		
 		sBuffer.append("www");
 		sBuffer.append(".runoob");
 		sBuffer.append(".com");
@@ -17,7 +20,7 @@ public class StringBuffer_StringBuilder_class {
 		System.out.println("sBuffer的容量：" + sBuffer.capacity());
 		sBuffer.append("123");
 		System.out.println("sBuffer的长度：" + sBuffer.length());
-		System.out.println("sBuffer的容量：" + sBuffer.capacity()); // (23+1)*2
+		System.out.println("sBuffer的容量：" + sBuffer.capacity()); // (22+1)*2
 		
 	}
 }
